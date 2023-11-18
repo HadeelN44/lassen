@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lessen/Challenge.dart';
 import 'package:lessen/HomeScreen.dart';
 
 void main() {
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         
       ),
-      home: HomeScreen()
+      home: Challenge()
     );
   }
 }
