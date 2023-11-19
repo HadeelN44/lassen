@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 class CustomPopUp extends StatefulWidget {
   const CustomPopUp({super.key, required this.title, required this.isCorrect});
   final String title;
@@ -29,22 +30,25 @@ class _CustomPopUpState extends State<CustomPopUp> {
             height: 200 ,
             width: width ,
             
-            child: Column(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                 SizedBox(height: 4,),
-            widget.isCorrect ? Icon(Icons.check, color: Color(0xFF034852),): Icon(Icons.close, color: Colors.red),
-            SizedBox(height: 28,),
+               SizedBox(height: 4,),
+            
             Text(
             widget.title,
             textAlign: TextAlign.center,
             style: TextStyle(
-                color: Color(0xFF007A82),
+                color:  Colors.black,
                 fontSize: 20,
                 fontFamily: 'Almarai',
                 fontWeight: FontWeight.w400,
           
             ),
            ),
+             SizedBox(width: 40,),
+           widget.isCorrect ? SvgPicture.asset("assets/Check.svg", height: 100, width: 100,): SvgPicture.asset("assets/wrongIcon.svg", height: 100, width: 100,),
+          
             SizedBox(height: 15,),
             Padding(
               padding: const EdgeInsets.symmetric( vertical: 10),

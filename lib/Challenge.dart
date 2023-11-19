@@ -128,8 +128,8 @@ class _ChallengeState extends State<Challenge> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Image.asset("assets/Left.png", fit: BoxFit.fitHeight, color: Color(0xFFFFF),),
-                     Image.asset("assets/Right.png", fit: BoxFit.fitHeight,),
+                    Image.asset("assets/Left-lightGreen.png", fit: BoxFit.fitHeight, color: Color(0xFFFFF),),
+                     Image.asset("assets/Right-lightGreen.png.png", fit: BoxFit.fitHeight,),
                   ],
                 )),
                 Center(
