@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lessen/Challenge.dart';
+import 'package:lessen/Challenges.dart';
 import 'package:lessen/HomeScreen.dart';
 
 class TopNavigator extends StatelessWidget {

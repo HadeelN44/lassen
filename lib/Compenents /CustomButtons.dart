@@ -20,12 +20,13 @@ class CustomizedButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
+          surfaceTintColor: ButtonColor.withOpacity(0.2),
           backgroundColor: ButtonColor,
           elevation: 0.0, 
           shadowColor: Colors.transparent,
           shape: RoundedRectangleBorder(
            
-            side: outlined ? BorderSide(width: 2, color: Color(0xFFE0DEF7)) : BorderSide.none,
+            side: outlined ? BorderSide(width: 2, color: Color(0xFF034852)) : BorderSide.none,
             borderRadius: BorderRadius.circular(6),
           ),
         ),
